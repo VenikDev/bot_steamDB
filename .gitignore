@@ -1,0 +1,7 @@
+.vscode
+.idea
+
+build
+
+go.sum
+.env
