@@ -19,12 +19,12 @@ var (
 // it logs an error message.
 func ConfigBot() {
 	apiToken := os.Getenv(consts.NAME_API_TOKEN)
-	bot, err := tgBotApi.NewBotAPI(apiToken)
+	var err error
+	Bot, err = tgBotApi.NewBotAPI(apiToken)
 	herr.HandlerFatal(err, "Token not correct")
 
-	bot.Debug = true
-
-	clog.Logger.Info("[BOT]", "Authorized on account", bot.Self.UserName)
+	Bot.Debug = BuildIsDebug().MustGet()
+	clog.Logger.Info("[BOT]", "Authorized on account", Bot.Self.UserName)
 }
 
 // Listen

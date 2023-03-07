@@ -6,6 +6,10 @@ require (
 	github.com/charmbracelet/log v0.1.2
 	github.com/go-telegram-bot-api/telegram-bot-api/v5 v5.5.1
 	github.com/joho/godotenv v1.5.1
+	github.com/samber/mo v1.8.0
+)
+
+require (
 	github.com/charmbracelet/lipgloss v0.6.0 // indirect
 	github.com/go-logfmt/logfmt v0.6.0 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
