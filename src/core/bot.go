@@ -49,7 +49,7 @@ func Listen() {
 			msg.ReplyToMessageID = update.Message.MessageID
 
 			_, err := Bot.Send(msg)
-			herr.HandlerError(err, "[BOT] Not sent message")
+			herr.HandlerError(err, "[BOT] Not sent message="+msg.Text)
 		}
 	}
 }
